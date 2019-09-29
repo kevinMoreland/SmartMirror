@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:rowCount="3"
+    android:columnCount="3"
+    tools:context=".MainActivity">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/articleScroller"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/article"
+            android:textSize="30sp"
+            android:layout_gravity="bottom"
+
+            android:maxLines="1" />
+    </HorizontalScrollView>
+
+
+    <TextClock
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textClock"
+        android:textSize="160sp"
+        android:fontFamily="sans-serif"
+        android:format12Hour="hh mm"
+        android:layout_gravity="top"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/weatherInfo"
+        android:layout_toStartOf="@+id/weatherInfo"
+        android:layout_above="@+id/secondSurfSpot"/>
+    <TextView
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/secondSurfSpot"
+        android:textSize="54sp"
+        android:layout_gravity="start"
+        android:layout_above="@+id/firstSurfSpot"
+        android:text="Morro Bay  \n2-3ft"
+        android:background="@color/poor"
+        />
+    <TextView
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/firstSurfSpot"
+        android:textSize="54sp"
+        android:layout_gravity="start"
+        android:layout_above="@+id/articleScroller"
+        android:text="Pismo  \n1-3ft"
+        android:background="@color/good"
+        />
+    <TextView
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/weatherInfo"
+        android:textSize="60sp"
+        android:layout_gravity="top"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="right"
+        android:layout_above="@+id/articleScroller"/>
+
+    <ImageView
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:id="@+id/weatherInfoIcon"
+        android:layout_gravity="top"
+        android:layout_above="@+id/weatherInfo"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="right"
+
+        />
+
+</RelativeLayout>

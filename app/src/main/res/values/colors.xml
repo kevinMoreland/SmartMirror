@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#0c0b20</color>
+    <color name="colorAccent">#4093ff</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+
+    <color name="poor">#3399ff</color>
+    <color name="poorFair">#33c9af</color>
+    <color name="fair">#00cc00</color>
+    <color name="good">#eb9c62</color>
+
+
+
+
+</resources>
